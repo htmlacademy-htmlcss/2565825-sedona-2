@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-logo">
@@ -19,7 +19,7 @@
             <a href="index.html">Главная</a>
           </li>
           <li class="navigation-link"><a href="#">О седоне</a></li>
-          <li class="navigation-link"><a href="hotels.html">Гостиницы</a></li>
+          <li class="navigation-link"><a href="catalog.html">Гостиницы</a></li>
         </ul>
         <ul class="navigation-list navigation-list-user">
           <li class="navigation-link">
@@ -37,8 +37,8 @@
       </nav>
     </header>
 
-    <main class="main-index">
-      <header class="main-header">
+    <main class="main-index" data-test="main">
+      <header class="main-header" data-test="hero">
         <img
           class="main-title"
           src="img/elements/welcome-title.svg"
@@ -67,7 +67,7 @@
       </section>
 
       <!-- Секция с плюсами -->
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <ul class="advantages-list">
           <li class="advantage-item">
             <h3 class="advantage-title">Настоящий городок</h3>
@@ -197,11 +197,11 @@
           Укажите предполагаемые даты поездки,<br />
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="hotel-search" href="hotels.html">Поиск гостиницы в Седоне</a>
+        <a class="hotel-search" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
 
       <!-- Секция для подписки на рассылку. -->
-      <section class="sedona-about">
+      <section class="sedona-about" data-test="subscribe">
         <h2 class="heading-about">Подпишитесь на рассылку</h2>
         <p class="description-about">
           Только полезная информация и никакого спама,<br />
@@ -224,7 +224,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <section class="contacts">
         <ul class="socials-list">
           <li class="social-item">
