@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <title>Главная</title>
-    <!-- <link href="styles.css" rel="stylesheet" /> -->
+    <link href="styles.css" rel="stylesheet" />
   </head>
 
   <body>
-    <header class="page-header" data-test="header">
+    <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-logo">
@@ -21,15 +21,16 @@
           <li class="navigation-link"><a href="#">О седоне</a></li>
           <li class="navigation-link"><a href="catalog.html">Гостиницы</a></li>
         </ul>
-        <ul class="navigation-list navigation-list-user">
-          <li class="navigation-link">
+        <ul class="navigation-button-list">
+          <li class="navigation-button">
             <a href="#">
               <img src="img/icons/search-icon.svg" alt="Поиск" />
             </a>
           </li>
-          <li class="navigation-link">
+          <li class="navigation-button">
             <a href="#">
               <img src="img/icons/heart-icon.svg" alt="Любимое" />
+              <span class="navigation-favorite-counter">12</span>
             </a>
           </li>
           <li class="navigation-button"><a href="#">Хочу сюда!</a></li>
@@ -37,21 +38,14 @@
       </nav>
     </header>
 
-    <main class="main-index" data-test="main">
-      <header class="main-header" data-test="hero">
+    <main class="main-index">
+      <header class="main-header">
         <img
           class="main-title"
           src="img/elements/welcome-title.svg"
           alt="WELCOME"
           width="458"
           height="371"
-        />
-        <img
-          class="main-background"
-          src="img/backgrounds/index-background.jpg"
-          alt="Фото гор"
-          width="1200"
-          height="485"
         />
       </header>
 
@@ -67,7 +61,7 @@
       </section>
 
       <!-- Секция с плюсами -->
-      <section class="advantages" data-test="advantages">
+      <section class="advantages">
         <ul class="advantages-list">
           <li class="advantage-item">
             <h3 class="advantage-title">Настоящий городок</h3>
@@ -201,7 +195,7 @@
       </section>
 
       <!-- Секция для подписки на рассылку. -->
-      <section class="sedona-about" data-test="subscribe">
+      <section class="sedona-about">
         <h2 class="heading-about">Подпишитесь на рассылку</h2>
         <p class="description-about">
           Только полезная информация и никакого спама,<br />
@@ -224,7 +218,7 @@
       </section>
     </main>
 
-    <footer class="page-footer" data-test="footer">
+    <footer class="page-footer">
       <section class="contacts">
         <ul class="socials-list">
           <li class="social-item">
