@@ -48,9 +48,10 @@
           height="371"
         />
       </header>
-
+      <div class="divider"></div>
       <!-- Первая секция с описанием. Всего таких 3 на страницу -->
       <section class="sedona-about">
+        <h1 class="visually-hidden">О Седоне</h1>
         <h2 class="heading-about">
           Седона - небольшой городок в Аризоне,<br />
           заслуживающий большего!
@@ -63,7 +64,7 @@
       <!-- Секция с плюсами -->
       <section class="advantages">
         <ul class="advantages-list">
-          <li class="advantage-item">
+          <li class="advantage-item background-blue">
             <h3 class="advantage-title">Настоящий городок</h3>
             <hr />
             <p class="advantage-description">
@@ -71,14 +72,11 @@
               туристов, там течет своя<br />
               жизнь
             </p>
-            <img
-              class="advantage-img"
-              src="img/elements/city-sedona.jpg"
-              alt="Фото городка"
-            />
+            <img class="advantage-img" src="img/elements/city-sedona.jpg"
+            alt="Фото городка" width: 800px; height: 385px; />
           </li>
 
-          <li class="advantage-item">
+          <li class="advantage-item background-light">
             <h3 class="advantage-title">Небольшая площадь</h3>
             <hr />
             <p class="advantage-desctiption">
@@ -87,7 +85,7 @@
             </p>
           </li>
 
-          <li class="advantage-item">
+          <li class="advantage-item background-dark">
             <h3 class="advantage-title">Красивая дорога</h3>
             <hr />
             <p class="advantage-description">
@@ -96,7 +94,7 @@
             </p>
           </li>
 
-          <li class="advantage-item">
+          <li class="advantage-item background-light">
             <h3 class="advantage-title">Мало туристов</h3>
             <hr />
             <p class="advantage-desription">
@@ -105,12 +103,9 @@
             </p>
           </li>
 
-          <li class="advantage-item">
-            <img
-              class="advantage-img"
-              src="img/elements/devil-bridge.jpg"
-              alt="Фото Моста Дьявола"
-            />
+          <li class="advantage-item background-blue">
+            <img class="advantage-img" src="img/elements/devil-bridge.jpg"
+            alt="Фото Моста Дьявола" width: 800px; height: 385px; />
             <h3 class="advantage-title">Там есть мост Дьявола</h3>
             <hr />
             <p class="advantage-description">
@@ -136,7 +131,7 @@
 
       <section class="recomendations">
         <ul class="recomendations-list">
-          <li class="recomnedation-item">
+          <li class="recomnedation-item background-light">
             <img
               class="recomendation-logo"
               src="img/icons/house-icon.svg"
@@ -166,7 +161,7 @@
               вы не разочаруетесь!
             </p>
           </li>
-          <li class="recomnedation-item">
+          <li class="recomnedation-item background-light">
             <img
               class="recomendation-logo"
               src="img/icons/souvenir-icon.svg"
@@ -178,7 +173,7 @@
             <p class="recomendation-description">
               Не только китайского,<br />
               но и настоящего местного<br />
-              производства
+              производства!
             </p>
           </li>
         </ul>
@@ -195,11 +190,11 @@
       </section>
 
       <!-- Секция для подписки на рассылку. -->
-      <section class="sedona-about">
+      <section class="sedona-about subscribe">
         <h2 class="heading-about">Подпишитесь на рассылку</h2>
         <p class="description-about">
           Только полезная информация и никакого спама,<br />
-          честное бойскаутское
+          честное бойскаутское!
         </p>
         <form
           class="email-subscribe"
@@ -213,7 +208,7 @@
             placeholder="Введите свой e-mail"
             required
           />
-          <input type="submit" name="accept" value="Подписаться" />
+          <input class="submit-button" type="submit" name="accept" value="Подписаться" />
         </form>
       </section>
     </main>
