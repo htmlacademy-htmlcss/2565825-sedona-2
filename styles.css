@@ -37,7 +37,7 @@ body {
   flex-direction: column;
   width: 1200px;
   margin: 0 auto;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
@@ -201,12 +201,15 @@ h2 {
   flex-wrap: wrap;
 }
 
-.advantage-item,
-.card-advantage {
+.advantage-item {
   box-sizing: border-box;
   width: 400px;
   height: 385px;
-  align-items: center;
+
+  padding: 112.5px 85px;
+}
+
+.card-advantage {
   padding: 102px 85px;
 }
 
@@ -322,10 +325,17 @@ h2 {
 }
 
 /* Свойства каталога */
+
 .filters {
   background-image: url(img/backgrounds/catalog-background.jpg);
   background-repeat: no-repeat;
   color: #fff;
+}
+
+.filters-section{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 35px 70px 58px 70px;
 }
 
 .catalog-heading {
@@ -385,6 +395,14 @@ fieldset {
   text-align: left;
 }
 
+.catalog-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 70px;
+}
+
+
+
 .filter-item {
   width: 141px;
   height: 21px;
@@ -437,7 +455,7 @@ fieldset {
   width: 340px;
   height: 438px;
   padding: 20px;
-  gap: 16px;
+  margin: 10px;
   border-radius: 4px;
   text-align: center;
 }
@@ -607,29 +625,31 @@ fieldset {
 
 .contacts {
   display: flex;
-  width: 1200px;
-  height: 120px;
-  margin: auto;
-  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 1060px;
+  padding: 40px 70px 30px;
 }
 
 .socials-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 142px;
-  height: 40px;
-  margin: auto;
 }
+
 
 .phone-number-link {
   width: 720px;
   height: 50px;
-  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .academy-logo {
-  margin: auto;
+  display: flex;
+  align-items: center;
 
 }
 
@@ -655,7 +675,7 @@ fieldset {
 }
 
 .description-about {
-  padding-bottom: 69px;
+  padding-bottom: 90px;
 }
 
 .heading-about-reasons {
@@ -695,11 +715,17 @@ fieldset {
 }
 
 
-.subscribe {
-  color: #fff;
+
+
+.sedona-subscribe {
+  text-align: center;
+  padding: 96px 258px 104px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.index-subscribe {
   background-image: url(img/backgrounds/footer-background.jpg);
   background-repeat: no-repeat;
-  padding: 96px 258px 104px;
 }
 
 .subscribe-form {
@@ -708,6 +734,7 @@ fieldset {
 }
 
 input[type=submit] {
+  font-family: "PT Sans", sans-serif;
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
   background: #82b3d3;
@@ -721,47 +748,47 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=email] {
+.email-input {
+  min-width: 452px;
+  min-height: 52px;
+  font-family: "PT Sans", sans-serif;
   border-radius: 4px 0 0 4px;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  padding: 12px 20px;
+  padding: 14px 20px;
   background-color: #f2f2f2;
   text-align: left;
   border: none;
   outline: none;
   flex-grow: 1;
+  box-sizing: border-box;
 }
 
-.sedona-subscribe {
-  text-align: center;
-  padding: 96px 258px 104px;
-  color: rgba(255, 255, 255, 1);
-}
 
-.index-subscribe {
-  background-image: url(img/backgrounds/footer-background.jpg);
-  background-repeat: no-repeat;
-}
 
 .catalog-subscribe {
   color: #000000;
 }
 
 
-.submit-button{
- border-style: none;
+.submit-button {
+  width: 232px;
+  border-style: none;
 }
 
 
 
 .heading-subscribe {
-  box-sizing: border-box;
   margin-bottom: 20px;
 }
 
 .description-subscribe {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
   margin-bottom: 54px;
 }
 
