@@ -55,8 +55,8 @@
               <a href="index.html">
                 <svg class="bredcrumb-home-link" role="img" aria-label="На главную"
                   xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 13 13">
-                  <path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
-                  <path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
+                  <path fill-rule="evenodd" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
+                  <path fill-rule="evenodd" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
                 </svg>
               </a>
             </li>
@@ -76,53 +76,84 @@
           <form class="filter-list" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="infrastructure">
               <legend class="infrastructure-title">Инфраструктура:</legend>
-              <label class="infrastructure-item">
-                <input class="visually-hidden filter-check" type="checkbox" name="advantage" checked value="pool">
-                <span class="check-mark"></span>
-                <span class="mark-title">Бассейн</span>
-              </label>
+              <ul class="filters-input-list">
+                <li class="filters-input-item">
+                  <label class="infrastructure-item">
+                    <input class="visually-hidden filter-check" type="checkbox" name="advantage" checked value="pool">
+                    <span class="check-mark"></span>
+                    <span class="mark-title">Бассейн</span>
+                  </label>
+                </li>
 
-              <label class="infrastructure-item">
-                <input class="visually-hidden filter-check" type="checkbox" name="advantage" checked value="parking">
-                <span class="check-mark"></span>
-                <span class="mark-title">Парковка</span>
-              </label>
+                <li class="filters-input-item">
+                  <label class="infrastructure-item">
+                    <input class="visually-hidden filter-check" type="checkbox" name="advantage" checked value="parking">
+                    <span class="check-mark"></span>
+                    <span class="mark-title">Парковка</span>
+                  </label>
+                </li>
 
-              <label class="infrastructure-item">
-                <input class="visually-hidden filter-check" type="checkbox" name="advantage" value="wi-fi" >
-                <span class="check-mark"></span>
-                <span class="mark-title">WI-FI</span>
-              </label>
+                <li class="filters-input-item">
+                  <label class="infrastructure-item">
+                    <input class="visually-hidden filter-check" type="checkbox" name="advantage" value="wi-fi" >
+                    <span class="check-mark"></span>
+                    <span class="mark-title">WI-FI</span>
+                  </label>
+                </li>
+              </ul>
             </fieldset>
 
             <fieldset class="hotel-type">
-              <legend class="hotel-type-title">Тип жилья:</legend>
-              <label class="hotel-type-item">
-                <input type="radio" name="hotel-type" checked value="hotel">Гостиница
-              </label>
+              <legend class="hotel-type-title">Тип Жилья:</legend>
+              <ul class="filters-input-list">
+                <li class="filters-input-item">
+                  <label class="hotel-type-item">
+                    <input class="visually-hidden filter-check" type="radio" name="hotel-type" checked value="hotel">
+                    <span class="check-mark"></span>
+                    <span class="mark-title">Гостиница</span>
+                  </label>
+                </li>
 
-              <label class="hotel-type-item">
-                <input type="radio" name="hotel-type" value="motel">Мотель
-              </label>
+                <li class="filters-input-item">
+                  <label class="hotel-type-item">
+                    <input class="visually-hidden filter-check" type="radio" name="hotel-type" value="motel">
+                    <span class="check-mark"></span>
+                    <span class="mark-title">Мотель</span>
+                  </label>
+                </li>
 
-              <label class="hotel-type-item">
-                <input type="radio" name="hotel-type" value="apartments">Апартаменты
-              </label>
+                <li class="filters-input-item">
+                  <label class="hotel-type-item">
+                    <input class="visually-hidden filter-check" type="radio" name="hotel-type" value="apartments">
+                    <span class="check-mark"></span>
+                    <span class="mark-title">Апартаменты</span>
+                  </label>
+                </li>
+              </ul>
             </fieldset>
 
             <fieldset class="price-slider">
               <legend class="price-slider-title">Стоимость, ₽:</legend>
               <div class="catalog-price-input">
-              <h3>От</h3>
-              <input class="price-input-left" type="number" placeholder="0" name="min-price">
-              <h3>До</h3>
-              <input class="price-input-right" type="number" placeholder="9000" name="max-price">
-              <input type="range" min="0" max="9000" step="100" value="6500">
+                <label class="price-input-label" for="min-price">
+                  <input class="price-input-field field-left" type="number" placeholder="0" name="min-price">
+                  <span class="price-input-heading">От</span>
+                </label>
+                <label class="price-input-label" for="max-price">
+                  <input class="price-input-field field-right" type="number" placeholder="9000" name="max-price" id="max-price">
+                  <span class="price-input-heading">До</span>
+                </label>
+              </div>
+              <div class="filter-range">
+                <!-- <input type="range" min="0" max="9000" step="100" value="6500"> -->
+                <button class="filter-range-button range-min" type="button"></button>
+                <button class="filter-range-button range-max" type="button"></button>
               </div>
             </fieldset>
+
             <div class="filter-buttons">
-            <button class="submit-button-catalog button-blue" type="submit">Применить</button>
-            <button class="reset-button-catalog" type="reset">Сбросить</button>
+              <button class="submit-button-catalog button-blue" type="submit">Применить</button>
+              <button class="reset-button-catalog" type="reset">Сбросить</button>
             </div>
           </form>
           </div>
