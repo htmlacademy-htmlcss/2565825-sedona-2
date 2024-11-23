@@ -1488,3 +1488,12 @@ input[type="number"] {
 .filter-range-button:active {
   outline: 2px solid rgba(131, 179, 211, 1);
 }
+
+.price-input-field:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.price-input-field:focus {
+  background-color: rgba(230, 230, 230, 1);
+  outline: 3px solid rgba(131, 179, 211, 1);
+}
