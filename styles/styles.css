@@ -53,21 +53,15 @@ body {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
-a {
+:where([class*="button"], [class*="link"]) {
   text-decoration: none;
-  color: #000;
+  color: var(--color-dark-primary);
 }
 
-ul {
+:where(ul, ol) {
+  padding-left: 0;
   margin: 0;
   list-style-type: none;
-}
-
-hr {
-  border: none;
-  width: 60px;
-  height: 2px;
-  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -819,7 +813,7 @@ fieldset {
 .catalog-slider {
   display: flex;
   width: 1060px;
-  margin: 37px 70px 60px;
+  margin: 37px 70px 62px;
 }
 
 .catalog-slider-item:not(:last-child) {
@@ -831,7 +825,7 @@ fieldset {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   width: 60px;
   height: 60px;
   border-radius: 4px;
@@ -856,7 +850,7 @@ fieldset {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   width: 60px;
   height: 60px;
   border-radius: 4px;
