@@ -46,12 +46,13 @@
     </header>
 
     <main class="main-catalog main-container">
+      <h1 class="visually-hidden">Гостиницы Седоны</h1>
       <div class="page-container">
       <header class="filters">
         <section class="filters-section">
           <div class="filters-main">
           <div class="catalog-navigation-section">
-          <h1 class="catalog-heading">Гостиницы Седоны</h1>
+          <h2 class="catalog-heading">Гостиницы Седоны</h2>
           <ul class="breadcrumbs">
             <li class="breadcrumb-item">
               <a href="index.html">
@@ -147,8 +148,12 @@
                 </label>
               </div>
               <div class="filter-range">
-                <button class="filter-range-button range-min" type="button"></button>
-                <button class="filter-range-button range-max" type="button"></button>
+                <button class="filter-range-button range-min" type="button">
+                  <span class="visually-hidden">Изменение минимальной цены</span>
+                </button>
+                <button class="filter-range-button range-max" type="button">
+                  <span class="visually-hidden">Изменение максимальной цены</span>
+                </button>
               </div>
             </fieldset>
 
@@ -171,17 +176,17 @@
           </select>
         </form>
         <ul class="catalog-view">
-          <li class="catalog-view-button">
+          <li class="catalog-view-button" tabindex="0">
             <a class="view-button-title button-active" href="catalog.html?view=title">
               <span class="visually-hidden">Показать плиткой</span>
             </a>
           </li>
-          <li class="catalog-view-button">
+          <li class="catalog-view-button" tabindex="0">
             <a class="view-button-card" href="catalog.html?view=card">
               <span class="visually-hidden">Показать карточками</span>
             </a>
           </li>
-          <li class="catalog-view-button">
+          <li class="catalog-view-button" tabindex="0">
             <a class="view-button-list" href="catalog.html?view=list">
               <span class="visually-hidden">Показать списком</span>
             </a>

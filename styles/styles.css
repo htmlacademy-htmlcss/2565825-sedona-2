@@ -71,28 +71,39 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  width: 339px;
+  flex-wrap: wrap;
+  max-width: 450px;
   align-items: center;
   margin-right: auto;
 }
 
 .navigation-link {
-  margin: 0 16px;
-  padding-left: 0;
   list-style-type: none;
+  margin: 0 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .link-heading {
   padding: 20px 0;
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
+  padding-left: 0;
+  list-style-type: none;
+  max-width: 200px;
 }
 
 .current::after {
   content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
   display: block;
-  border-bottom: 2px solid rgba(117, 98, 87, 1);
-  transform: translateY(20px);
+  background-color: rgba(117, 98, 87, 1);
 }
 
 .navigation-button-list {
@@ -101,7 +112,6 @@ body {
   max-width: 380px;
   align-items: center;
   margin-left: auto;
-
 }
 
 .navigation-icon {
@@ -121,13 +131,13 @@ body {
 
 .navigation-favorite-counter {
   position: absolute;
-  top: 10px;
+  top: 11px;
   left: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   font-size: 10px;
   font-weight: 400;
   line-height: 10px;
@@ -217,6 +227,8 @@ h2 {
   width: 400px;
   min-height: 385px;
   padding: 112px 85px;
+  background-color: rgba(131, 179, 211, 0.2);
+  color: #000;
 }
 
 .card-advantage {
@@ -229,6 +241,8 @@ h2 {
   align-items: center;
   width: 400px;
   min-height: 385px;
+  background-color: #82B3D3;
+  color: #fff;
 }
 
 .big-card {
@@ -260,16 +274,21 @@ h2 {
 
 .recomendations-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 1200px;
 }
 
 .recomendation-item {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 400px;
+  min-height: 385px;
   padding: 81px 85px;
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000;
 }
 
 .recomendation-title {
@@ -315,27 +334,12 @@ h2 {
   line-height: 21px;
 }
 
-.phone-number-link {
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: center;
-  text-decoration: none;
-  color: rgba(0, 0, 0, 1);
+.recomendation-item:nth-child(2n) {
+  background-color: rgba(255, 255, 255, 1);
 }
 
-.background-blue {
-  background-color: #82B3D3;
-  color: #fff;
-}
-
-.background-light {
+.advantage-item:nth-child(2n) {
   background-color: rgba(131, 179, 211, 0.12);
-  color: #000;
-}
-
-.background-dark {
-  background-color: rgba(131, 179, 211, 0.2);
   color: #000;
 }
 
@@ -452,6 +456,7 @@ h2 {
   color: rgba(0, 0, 0, 1);
   width: 143px;
   padding: 12px 20px;
+  padding-right: 51px;
   border: none;
 }
 
@@ -507,6 +512,7 @@ h2 {
   font-weight: 700;
   line-height: 78px;
   text-align: left;
+  text-transform: capitalize;
 }
 
 .breadcrumbs {
@@ -635,9 +641,8 @@ fieldset {
 
 .catalog-found {
   flex-grow: 1;
-  margin-left: 1px;
-  margin-bottom: 1px;
   margin: 0;
+  min-width: 450px;
 }
 
 .filters-list {
@@ -671,6 +676,7 @@ fieldset {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -767,6 +773,8 @@ fieldset {
 
 .catalog-buttons {
   display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 300px;
 }
@@ -869,7 +877,7 @@ fieldset {
   align-items: center;
   justify-content: center;
   font-family: "PT Sans", sans-serif;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   border-radius: 4px;
   background: rgba(130, 179, 211, 1);
@@ -942,11 +950,18 @@ fieldset {
 }
 
 .phone-number-link {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
   width: 720px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding-top: 0;
+  padding-top: 1px;
   margin-left: 2px;
 }
 
@@ -970,26 +985,37 @@ fieldset {
   line-height: 26px;
 }
 
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 69px 0 90px;
+}
+
+.reasons-wrapper {
+  padding: 64px 0;
+}
+
 .heading-about {
+  box-sizing: border-box;
   margin: 0;
-  padding-top: 69px;
   margin-bottom: 25px;
 }
 
 .description-about {
+  box-sizing: border-box;
   margin: 0;
-  padding-bottom: 90px;
 }
 
 .heading-about-reasons {
   margin: 0;
-  padding-top: 64px;
   margin-bottom: 20px;
 }
 
 .description-about-reasons {
   margin: 0;
-  padding-bottom: 64px;
 }
 
 .interesting {
@@ -1138,6 +1164,10 @@ fieldset {
   justify-content: center;
 }
 
+.modal-heading {
+  margin: 0;
+}
+
 .modal-form {
   margin-top: 64px;
 }
@@ -1163,6 +1193,7 @@ fieldset {
   box-sizing: border-box;
   width: 440px;
   padding: 12px 20px;
+  padding-right: 60px;
   background-color: rgba(242, 242, 242, 1);
   border: none;
   font-family: "PT Sans", sans-serif;
@@ -1177,6 +1208,7 @@ fieldset {
 }
 
 .modal-message {
+  margin: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
@@ -1352,6 +1384,19 @@ input[type="number"] {
 
 /* Ивенты */
 
+.navigation-logo:hover .navigation-logo-img {
+  opacity: 90%;
+}
+
+.navigation-link:hover .link-heading,
+.navigation-link:focus .link-heading {
+  color: rgba(117, 97, 87, 1);
+}
+
+.navigation-link:active .link-heading {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .button:hover,
 .button:focus {
   background: rgba(97, 80, 72, 1);
@@ -1391,17 +1436,21 @@ input[type="number"] {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.phone-number-link:hover,
-.phone-number-link:focus,
-.icon-svg:hover,
-.icon-svg:focus {
+.navigation-icon-link:hover .icon-svg,
+.navigation-icon-link:focus .icon-svg {
   fill: rgba(117, 97, 87, 1);
+}
+
+.navigation-icon-link:active .icon-svg {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.phone-number-link:hover,
+.phone-number-link:focus {
   color: rgba(117, 97, 87, 1);
 }
 
-.phone-number-link:active,
-.icon-svg:active {
-  fill: rgba(117, 97, 87, 0.3);
+.phone-number-link:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
@@ -1523,7 +1572,8 @@ input[type="number"] {
   outline: 3px solid rgba(131, 179, 211, 1);
 }
 
-.filter-range-button:active {
+.filter-range-button:active,
+.filter-range-button:hover {
   outline: 2px solid rgba(131, 179, 211, 1);
 }
 
