@@ -204,13 +204,6 @@ body {
   text-align: center;
 }
 
-h2 {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-}
-
 .advantages-list {
   margin: 0;
   padding: 0;
@@ -387,6 +380,7 @@ h2 {
 .infrastructure,
 .hotel-type,
 .price-slider {
+  border: none;
   padding: 0;
   margin: 0;
   margin-right: 70px;
@@ -539,10 +533,6 @@ h2 {
   fill: rgba(255, 255, 255, 1);
 }
 
-fieldset {
-  border: none;
-}
-
 .infrastructure-item,
 .hotel-type-item {
   display: flex;
@@ -640,6 +630,10 @@ fieldset {
 }
 
 .catalog-found {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
   flex-grow: 1;
   margin: 0;
   min-width: 450px;
@@ -999,6 +993,10 @@ fieldset {
 }
 
 .heading-about {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
   box-sizing: border-box;
   margin: 0;
   margin-bottom: 25px;
@@ -1010,6 +1008,10 @@ fieldset {
 }
 
 .heading-about-reasons {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -1025,6 +1027,10 @@ fieldset {
 }
 
 .heading-interesting {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -1108,6 +1114,10 @@ fieldset {
 }
 
 .heading-subscribe {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -1165,6 +1175,10 @@ fieldset {
 }
 
 .modal-heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
   margin: 0;
 }
 
